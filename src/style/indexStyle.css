@@ -1,0 +1,219 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color: #266fcf;
+}
+
+.hero-container{
+    padding: 5rem 4rem 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    max-width: 44rem;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.sobre-container{
+    max-width: 75rem;
+    padding: 5rem 0;
+}
+
+.sobre-upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sobre-upper-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+max-width: 37rem;
+}
+
+.sobre-upper-right{
+    display: flex;
+    flex-direction: column;
+max-width: 37rem;
+padding-bottom: 5rem;
+}
+
+.sobre-lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 5rem;
+}
+
+.sobre-box{
+    width: 100%;
+    max-width: 23rem;
+    min-height: 14rem;
+
+    border: #093b7c solid 2.5px;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sobre-box img{
+    width: 4rem;
+    height: 4rem;
+    padding-bottom: 1rem;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    background-color: rgb(244, 244, 244);
+}
+
+.servicos-container{
+    max-width: 75rem;
+    padding: 5rem 0;
+}
+
+.servicos-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.servicos-lower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.servicos-box{
+    width: 100%;
+    max-width: 23rem;
+    min-height: 18.5rem;
+
+    border: #000000 solid 2.5px;
+    border-radius: 12px;
+    padding: 1.5rem 1rem 1rem;
+    gap: 1rem;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos-box img{
+    width: 2rem;
+    height: 2rem;
+}
+
+  /* XXXXXXXXXX DIFERENCIAL XXXXXXXXXX */
+
+
+.diferencial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.diferencial-container{
+    max-width: 75rem;
+    padding: 5rem 0;
+}
+
+.diferencial-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.diferencial-row-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 37rem;
+}
+
+.diferencial-row-right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 37rem;
+}
+
+.diferencial-points{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+.diferencial-points img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.diferencial-idea{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.diferencial-idea img{
+    width: 2rem;
+    height: auto;
+}
+
+.diferencial-motivos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 2.4rem;
+}
+
+
+.diferencial-motivos-box p{
+padding: 0;
+margin: 0;
+}
+

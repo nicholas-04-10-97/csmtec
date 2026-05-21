@@ -1,0 +1,56 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+}
+
+ html p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+.black-title{
+    color: #000000;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+}
+
+.black-small-title{
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.white-sub-title{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.blue-sub-title{
+    color: #1656a5;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.black-sub-title{
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.light-text{
+    color: #d1d0d0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.dark-text{
+    color: #4d4d4d;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}

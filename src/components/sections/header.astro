@@ -1,5 +1,5 @@
 ---
-// Header.astro
+import logo from "../../assets/LogoWhite.png"
 ---
 
 <header id="site-header">
@@ -7,7 +7,7 @@
 
     <!-- Logo -->
     <a href="/" class="logo">
-      <img src="/logo.png" alt="CSM Logo" />
+      <img src={logo.src} alt="CSM Logo" />
     </a>
 
     <!-- Hamburger Button -->
@@ -20,9 +20,9 @@
     <!-- Navigation -->
     <nav id="mobile-menu">
       <ul class="nav-links">
-        <li><a href="#sobre">Sobre a CSM</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#about">Sobre a CSM</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#resources">Recursos</a></li>
 
         <!-- Dropdown -->
         <li class="dropdown">
@@ -32,11 +32,11 @@
 
           <ul class="submenu">
             <li><a href="/fale-conosco">Fale Conosco</a></li>
-            <li><a href="/colaborador">Seja um colaborador</a></li>
+            <li><a href="/seja-um-colaborador">Seja um colaborador</a></li>
           </ul>
         </li>
 
-        <li><a href="#conformidade">Conformidade</a></li>
+        <li><a href="/conformidade">Conformidade</a></li>
       </ul>
     </nav>
 
@@ -149,7 +149,7 @@
 
   .nav-links a:hover,
   .dropdown-btn:hover {
-    color: #6bb8ff;
+    text-decoration: underline;
   }
 
   /* SUBMENU */
@@ -160,11 +160,9 @@
 
     min-width: 230px;
 
-    background: #0d2445;
+    background: #ffffff;
 
-    border-radius: 12px;
-
-    padding: 0.5rem 0;
+    padding: 0;
     list-style: none;
 
     opacity: 0;
@@ -182,13 +180,16 @@
 
   .submenu a {
     display: block;
-    padding: 0.85rem 1rem;
-    color: white;
+    padding: 1rem 0.5rem;
+    border-bottom: #b2b2b2 1px solid;
+    color: rgb(0, 0, 0);
   }
 
-  .submenu a:hover {
-    background: rgba(255, 255, 255, 0.06);
-  }
+.submenu a:hover {
+  background-color: #053167;
+  color: #ffffff;
+  text-decoration: none;
+}
 
   /* Desktop dropdown */
   .dropdown:hover .submenu {

@@ -1,12 +1,169 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import '../style/indexStyle.css';
+
 import TextAnimation from '../components/ui/TextAnimation.astro';
+import VerticalLine from '../components/ui/VerticalLine.astro';
+import SobreNosImage from '../assets/home/about-us.webp';
+import services01 from '../assets/home/services-01.webp';
+import services02 from '../assets/home/services-02.webp';
+
 ---
 
 <Layout title="CSM TEC">
 
-  <h1>Bem-vindo à CSM</h1>
-  <p>Especialistas em Conformidade e Segurança da Informação</p>
+<section class="hero">
+	<div class="hero-container">
+		<p class="white-sub-title">Revolucionando a Tecnologia para o Futuro</p>
+		<TextAnimation />
+		<p class="light-text">Na CSM TEC, transformamos ideias em soluções inovadoras, focadas na melhoria de processos, impulsionando o crescimento e a eficiência dos nossos clientes.</p>
+	</div>
+</section>
+
+<section class="sobre-nos" id="about">
+	<div class="sobre-container">
+		<div class="sobre-upper">
+			<div class="sobre-upper-left">
+				<img src={SobreNosImage.src} alt="Sobre Nós" />
+			</div>
+			<div class="sobre-upper-right">
+				<p class="blue-sub-title">Sobre Nós</p>
+				<p class="black-title">Inovação e</br>Excelência em</br>Tecnologia</p>
+				<p class="dark-text">Somos uma empresa voltada para o Desenvolvimento de Operações Inovadoras através do uso da Tecnologia, focada na área da saúde e educação, trazendo sempre soluções para melhoria dos serviços nas áreas em que atuamos e focando na qualidade e excelência operacional.</p>
+			</div>
+		</div>
+		<div class="sobre-lower">
+			<div class="sobre-box">
+				<img src="public/icons/target.png" alt="missao">
+				<p class="black-small-title">Missão</p>
+				<p class="dark-text">Resolver desafios complexos com tecnologia disruptiva.</p>
+			</div>
+			<div class="sobre-box">
+				<img src="public/icons/eye.png" alt="visao">
+				<p class="black-small-title">Visão</p>
+				<p class="dark-text">Ser referência em soluções que transformam setores essenciais para a sociedade.</p>
+
+			</div>
+			<div class="sobre-box">
+				<img src="public/icons/scales.png" alt="valor">
+				<p class="black-small-title">Valores</p>
+				<p class="dark-text">Inovação / Acessibilidade / Ética / Qualidade / Segurança e Conformidade / Humanização.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="servicos" id="services">
+	<div class="servicos-container">
+		<div class="servicos-upper">
+			<p class="blue-sub-title">Serviços</p>
+			<p class="black-title">Inovamos para conectar e transformar vidas</p>
+			<p class="dark-text">Acreditamos que a tecnologia só faz sentido quando impacta vidas de forma positiva. Desenvolvemos soluções que unem inteligência artificial, design centrado no usuário e conectividade para tornar processos mais humanos, acessíveis e eficientes. Seja na saúde, na educação ou em qualquer setor que cuide de pessoas, nossa missão é transformar inovação em bem-estar.</p>
+		</div>
+		<div class="servicos-lower">
+			<div class="servicos-box">
+				<img src="public/icons/ai.png" alt="desenvolvimento">
+				<p class="black-sub-title">Desenvolvimento de Aplicações usando IA</p>
+				<p class="dark-text">A tecnologia deve simplificar rotinas, ampliar oportunidades e estar ao alcance de todos. Criamos aplicações inteligentes que entendem necessidades, antecipam desafios e entregam experiências intuitivas, aproximando pessoas da inovação de forma natural e significativa. </p>
+			</div>
+			<div class="servicos-box">
+				<img src="public/icons/education.png" alt="educacao">
+				<p class="black-sub-title">Educação como Experiência Transformadora</p>
+				<p class="dark-text">O conhecimento deve ser acessível, dinâmico e adaptável. Criamos soluções que personalizam a jornada de aprendizado, conectam educadores e alunos e transformam a tecnologia em um meio intuitivo para o crescimento pessoal e profissional. </p>
+
+			</div>
+			<div class="servicos-box">
+				<img src="public/icons/system.png" alt="integracao">
+				<p class="black-sub-title">Integração de Sistemas e Conectividade Inteligente</p>
+				<p class="dark-text">Para se tornar verdadeiramente poderosa, a tecnologia deve servir como ponte entre necessidades e soluções, facilitando conexões. Desenvolvemos sistemas conectados que ampliam o alcance da inovação e proporcionam experiências mais fluidas, seguras e eficazes. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="diferencial" id="resources">
+	<div class="diferencial-container">
+
+		<div class="diferencial-row">
+			<div class="diferencial-row-left">
+				<img src={services01.src} alt="Sobre Nós" />
+			</div>
+			<div class="diferencial-row-right">
+				<p class="blue-sub-title">Nosso Diferencial</p>
+				<p class="black-title">Inovação para um Futuro Mais Humano</p>
+				<p class="dark-text"> Na CSM Tec, cada linha de código, cada interface e cada solução desenvolvida carrega um propósito maior: conectar tecnologia e humanidade. Criamos o futuro sem esquecer do presente, valorizando a experiência, o bem-estar e as relações que fazem a inovação ter realmente sentido: </p>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Propósito nítido e paixão pelas relações afetivas</p>
+				</div>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Simplicidade e maestria na execução</p>
+				</div>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Inovação move, transforma, impulsiona</p>
+				</div>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Ênfase na experiência humana e impacto social</p>
+				</div>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Cultura de união, diversidade e inclusão</p>
+				</div>
+			    <div class="diferencial-points">
+					<img src="public/icons/check.png" alt="Inovação" />
+					<p class="dark-text">Cada detalhe importa</p>
+				</div>
+			</div>			
+		</div>
+
+		<div class="diferencial-row">
+			<div class="diferencial-row-left">
+				<p class="blue-sub-title">Destaque no mercado</p>
+				<p class="black-title">Motivos para</br>Escolher a CSM</p>
+				<p class="dark-text">Somos uma empresa voltada para o Desenvolvimento de Operações Inovadoras através do uso da Tecnologia, focada na área da saúde e educação, trazendo sempre soluções para melhoria dos serviços nas áreas em que atuamos e focando na qualidade e excelência operacional.</p>
+			    <div class="diferencial-idea">
+                    <VerticalLine />
+					<div class="diferencial-motivos">
+						<div class="diferencial-motivos-box">
+							<p class="black-sub-title">Inovação que Transforma</p>
+							<p class="dark-text">Experiência em projetos disruptivos e inovadores.</p>
+						</div>
+						<div class="diferencial-motivos-box">
+							<p class="black-sub-title">Tecnologia que Resolve</p>
+							<p class="dark-text">Foco em resolver problemas críticos com o uso da tecnologia.</p>
+						</div>
+						<div class="diferencial-motivos-box">
+							<p class="black-sub-title">Resultados em Conjunto</p>
+							<p class="dark-text">Parcerias estratégicas e compromisso com o resultado.</p>
+						</div>
+						<div class="diferencial-motivos-box">
+							<p class="black-sub-title">Conectando a Distância</p>
+							<p class="dark-text">Possibilidade de atendimento em lugares remotos e de difícil acesso.</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+
+
+
+
+
+
+
+
+
+
+			<div class="diferencial-row-right">
+				<img src={services02.src} alt="Sobre Nós" />
+			</div>		
+		</div>
+
+	</div>
+</section>
 
 </Layout>

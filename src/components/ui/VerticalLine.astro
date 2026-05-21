@@ -1,0 +1,86 @@
+<section class="timeline">
+
+    <!-- Vertical Line -->
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+        <div class="timeline-circle">
+            <img src="/icons/light-white.png" alt="Idea" />
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-circle">
+            <img src="/icons/ai-white.png" alt="AI" />
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-circle">
+            <img src="/icons/handshake-white.png" alt="Handshake" />
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-circle">
+            <img src="/icons/globe-white.png" alt="Global" />
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+    
+
+     .timeline {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+
+  }
+
+  /* Vertical dashed line */
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    border-left: 2px dashed #1d4ed8;
+
+    z-index: 0;
+  }
+
+  .timeline-item {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Blue circles */
+  .timeline-circle {
+    width: 2.25rem;
+    height: 2.25rem;
+
+    border-radius: 50%;
+
+    background: #1e3a8a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .timeline-circle img {
+    width: 1rem;
+    height: 1rem;
+
+    object-fit: contain;
+  }
+</style>
