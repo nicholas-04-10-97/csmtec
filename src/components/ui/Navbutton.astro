@@ -1,0 +1,115 @@
+---
+// Example links
+const phoneNumber = "5571999999999";
+---
+<div class="spacer" style="height: 2000px;">
+<p>test</p>
+</div>
+
+
+
+
+
+<div class="floating-buttons">
+  <!-- Phone Button -->
+  <a
+    href={`https://wa.me/${phoneNumber}`}
+    class="float-btn phone-btn"
+    target="_blank"
+  >
+    <img src="public/icons/phone.png" alt="Phone">
+  </a>
+
+  <!-- Back To Top Button -->
+  <button id="topButton" class="float-btn top-btn">
+        <img src="public/icons/arrowUP.png" alt="UP">
+  </button>
+</div>
+
+<script>
+  const topButton = document.getElementById("topButton");
+
+  function checkScroll() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
+
+    // Show button when near bottom
+    if (scrollPosition >= pageHeight - 300) {
+      topButton.classList.add("show");
+    } else {
+      topButton.classList.remove("show");
+    }
+  }
+
+  window.addEventListener("scroll", checkScroll);
+
+  topButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  checkScroll();
+</script>
+
+<style>
+  .floating-buttons {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    z-index: 9999;
+  }
+
+  .float-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    font-size: 28px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition:
+      transform 0.35s ease,
+      opacity 0.35s ease,
+      background-color 0.3s ease;
+  }
+
+  .phone-btn {
+    color: white;
+border: 2px solid #6085ff; 
+ }
+
+  .phone-btn:hover {
+    background: #6085ff;
+  }
+
+  .top-btn {
+border: 2px solid #6085ff; 
+    color: white;
+
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+  }
+
+  .top-btn.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .top-btn:hover {
+    background: #6085ff;
+  }
+</style>
