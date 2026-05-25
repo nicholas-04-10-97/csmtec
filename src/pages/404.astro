@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import construcao from '../assets/404.webp';
+
+---
+
+<Layout title="404 - CSM TEC">
+    <div class="not-found">
+        <h1 class="white-title">Página em Construção</h1>
+        <img src={construcao.src} alt="Página em Construção" class="not-found-image" />
+    </div>
+</Layout>
+
+<style>
+  .not-found {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8rem;
+
+    background:
+linear-gradient(
+      to bottom,
+      var(--primary-black) 0%,
+      var(--primary-blue) 25%,
+      var(--primary-white) 100%
+    );
+  }
+
+
+
+  @media (max-width: 768px) {
+    .not-found {
+      padding: 1.5rem;
+    }
+
+    .not-found-image {
+      max-width: 320px;
+    }
+  }
+</style>

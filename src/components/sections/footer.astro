@@ -1,0 +1,263 @@
+---
+import logo from "../../assets/LogoWhite.png"
+---
+
+<footer class="footer">
+<div class="footer-barrier"></div>
+
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-column footer-brand">
+      <img src={logo.src} alt="CSM Logo" class="footer-logo" />
+
+      <p>
+        Na CSM Tec, conectamos inovação e tecnologia para
+        transformar ideias em soluções reais. Construindo
+        um futuro melhor, juntos.
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-column">
+      <h3>Endereço</h3>
+
+      <div class="footer-item">
+		<img src="public/icons/building.png" alt="Inovação" />
+        <span>Edifício Empresarial Alto do Parque</span>
+      </div>
+
+      <div class="footer-item">
+        <img src="public/icons/location.png" alt="Inovação" />
+        <span>
+          Rua Professor Leopoldo Amaral 366, Pavimento 1001,
+          Sala 09 e 10, CEP: 41.830-494, Pituba, Salvador-BA
+        </span>
+      </div>
+
+      <div class="footer-item">
+        <img src="public/icons/mail.png" alt="Inovação" />
+        <span>contato@csmtec.com.br</span>
+      </div>
+
+      <div class="footer-item">
+        <img src="public/icons/phonewhite.png" alt="Inovação" />
+        <a href="tel:+557126261201">+55 (71) 2626-1201</a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-column">
+      <h3>Outros Links</h3>
+
+      <ul class="footer-links">
+        <li><a href="/conformidade">Conformidade</a></li>
+        <li><a href="/cookies">Política de Cookies</a></li>
+        <li><a href="/privacidade">Política de Privacidade</a></li>
+        <li><a href="/termos">Termos de Uso</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    © 2025 CSM Tec. Transformando tecnologia em soluções.
+    Todos os direitos reservados.
+  </div>
+</footer>
+
+<style>
+
+.footer {
+  position: relative;
+
+  background:
+    linear-gradient(
+      35deg,
+      var(--primary-black) 0%,
+      var(--primary-blue) 100%
+    );
+
+  color: white;
+
+  overflow: hidden;
+
+}
+
+.footer-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255,255,255,0.08),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+.footer-container {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.8fr;
+
+  gap: 2rem;
+
+  position: relative;
+  z-index: 1;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+}
+
+.footer-brand p {
+  margin-top: 2rem;
+
+  line-height: 1.8;
+  font-size: 1.05rem;
+
+  max-width: 420px;
+
+  color: rgba(255,255,255,0.9);
+}
+
+.footer-logo {
+  width: 240px;
+  display: block;
+}
+
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+
+  line-height: 1.6;
+}
+
+.footer-item svg {
+  min-width: 18px;
+  margin-top: 4px;
+}
+
+.footer-item img {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+}
+
+.footer-item a {
+  color: rgba(255,255,255,0.92);
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+
+  display: inline-block;
+}
+.footer-links {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1.4rem;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.92);
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  text-align: center;
+
+  padding:
+    3rem 1rem 2rem;
+
+  margin-top: 4rem;
+
+  font-size: 0.95rem;
+
+  color: rgba(255,255,255,0.8);
+
+  position: relative;
+  z-index: 1;
+  border-top: var(--primary-blue) 1px solid;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .footer-logo {
+    width: 200px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .footer {
+    padding-top: 4rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer-brand p,
+  .footer-item,
+  .footer-links a {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+
+.footer-barrier {
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 60px 60px;
+      margin-bottom: 5rem;
+
+}
+
+</style>

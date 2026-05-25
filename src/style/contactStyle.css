@@ -1,0 +1,89 @@
+.contact-banner{
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-blue) 0%,
+      var(--primary-black) 30%,
+      var(--primary-blue) 75%,
+      #75aef3 100%
+    );
+
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 2rem;
+}
+
+.contact-banner-content{
+    padding: 8rem 0 4rem;
+    display: flex;
+    flex-direction: row;
+    width: 75rem;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+    max-width: 75rem;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+max-width: 37rem;
+}
+
+
+
+.conformidade-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.conformidade-content {
+  width: 100%;
+  max-width: 75rem; /* controls content width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.conformidade-form {
+  width: 100%;
+}
+
+.conformImg{
+  width: 50%;
+  height: auto;
+}
+
+.conformidade-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

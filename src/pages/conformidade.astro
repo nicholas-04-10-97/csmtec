@@ -1,9 +1,62 @@
 ---
+import '../style/GlobalStyle.css';
+import '../style/contactStyle.css';
+
 import Layout from '../layouts/Layout.astro';
+import ContactForm from "../components/function/ContactForm.astro";
+
+import ConformidadeImage from '../assets/contato/conformidadewheel.webp';
+
 ---
 
 <Layout title="Conformidade - CSM TEC">
+<div class="contact-banner">
+    <div class="contact-banner-content">
+        <p class="white-hero">Conformidade</p>
+    </div>
+</div>
+<div class="conformidade-section">
+    <div class="conformidade-content">
+
+        <section class="conformidade-center">
+           <p class="blue-sub-title">CONFORMIDADE CSM TECNOLOGIA</p>
+           </section>
+        <section>
+            <p class="dark-text">O Programa de Integridade da CSM Tecnologia, tem como objetivo principal fortalecer a imagem da empresa, valores, estimular o bem-estar dos colaboradores, reduzir a ocorrência de irregularidades e fomentar um ambiente de trabalho transparente e correto, através do comprometimento de todos com a ética e as boas práticas empresariais.</p>
+            <p class="dark-text">Esse conjunto de medidas visa PREVINIR condutas inadequadas, DETECTAR pontos de atenção ou possíveis desvios e REMEDIAR, de forma sistêmica, a ocorrência de condutas não éticas, ilegais e desalinhadas com políticas e procedimentos, favorecendo um ambiente de compromisso com o que é certo, onde atitudes incompatíveis não são permitidas.</p>
+            <p class="dark-text">O Programa de Integridade da CSM está conectado com as exigências do Decreto 11.129/22 e com as melhores práticas de mercado, visando garantir os mecanismos e procedimentos adequados à estrutura da Companhia.</p>
+        </section>
+
+
+        <section class="conformidade-center">
+            <p class="black-sub-title">O Programa de Compliance da CSM, está baseado nos 10 pilares.</p>
+            <img src={ConformidadeImage.src} alt="10 pilares do programa de compliance da CSM" class="conformImg"/>
+        </section>
+
+        <section>
+            <p class="black-sub-title">Código de Conduta</p>
+            <p class="dark-text">O Código de Conduta da CSM TEC é o principal guia do Programa de Integridade e tem como objetivo apresentar padrões de conduta e princípios éticos que norteiam a nossa atuação.</p>
+            <p class="dark-text">Clique <a href="http://localhost:4321/code-of-conduct">aqui</a> e acesse nosso Código de Conduta</p>
+            <p class="black-sub-title">Canal de Denúncias </p>
+            <p class="dark-text">O CANAL DE DENÚNCIA é uma ferramenta extremamente importante do Programa de Integridade e por isso deve ser utilizada com muita responsabilidade. Pode ser usada por qualquer colaborador e pelo público externo para comunicar atitudes que não estejam de acordo com o nosso código de conduta.</p>
+            <p class="dark-text">A Companhia proíbe qualquer forma de retaliação, exposição, ameaças e coação aos denunciantes, testemunhas e aos demais envolvidos nos processos de investigação interna. Qualquer um desses atos também deve ser denunciado e está sujeito a medidas disciplinares.</p>
+            <p class="dark-text">A CSM coloca à disposição do público duas modalidades de acesso ao Canal de Denúncias, sendo elas através do e-mail <a href="mailto:conformidade@csmtec.com.br">conformidade@csmtec.com.br</a> e através da mensagem no site da empresa. Poderão ser registradas todas e quaisquer desconformidades sejam elas de natureza legal, éticas e/ou regulamentares, sendo acionada, imediatamente, a área de Compliance para a tomada das devidas providências.
+Registre aqui sua denúncia:</p>
+            <p class="dark-text">Registre sua denúncia:</p>
+        </section>
+        <section class="conformidade-form">
+            <ContactForm />
+        </section>
+        <p class="dark-text">Além deste canal, outra opção para envio de denúncias é o e-mail: <a href="mailto:conformidade@csmtec.com.br">conformidade@csmtec.com.br</a>. Garantimos total sigilo e segurança no tratamento das informações. As informações são registradas e tratadas com sigilo absoluto, regidos de forma confidencial e independente, garantindo o anonimato dos relatores e a segurança na apuração. </p>
+    </div>
+</div>  
 
 
 
 </Layout>
+
+
+<style>
+    .a {
+        text-decoration: none;
+    }

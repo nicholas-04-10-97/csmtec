@@ -1,56 +1,89 @@
  html, body {
   margin: 0;
   padding: 0;
+    zoom: 0.98;
+}
+
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --primary-blue: #1656a5;
+  --light-gray: #d1d0d0;
+  --dark-gray: #4d4d4d;
+
+  --title-size: 3rem;
+  --title-height: 3.5rem;
+  --subtitle-size: 1.2rem;
+  --calling-text:1.4rem;
+  --text-size: 1rem;
 }
 
  html p {
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
+font-family: Arial, sans-serif;
+  
 }
 
+  .white-hero {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  }
+
 .black-title{
-    color: #000000;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    color: var(--primary-black);
+    font-size: var(--title-size);
+    line-height: var(--title-height);
     font-weight: 900;
 }
 
-.black-small-title{
-    color: #000000;
-    font-size: 2.2rem;
+.white-title{
+    color: var(--primary-white);
+    font-size: var(--title-size);
+    line-height: var(--title-height);
+    font-weight: 900;
+}
+
+.black-mid-title{
+    color: var(--primary-black);
+    font-size: var(--calling-text);
     font-weight: bold;
 }
 
 .white-sub-title{
-    color: white;
-    font-size: 1.5em;
+    color: var(--primary-white);
+    font-size: var(--subtitle-size);
     margin-top: 0.5em;
     font-weight: bold;
 }
 
 .blue-sub-title{
-    color: #1656a5;
-    font-size: 1.5em;
+    color: var(--primary-blue);
+    font-size: var(--subtitle-size);
     margin-top: 0.5em;
     font-weight: bold;
 }
 
 .black-sub-title{
-    color: #000000;
-    font-size: 1.5em;
+    color: var(--primary-black);
+    font-size: var(--subtitle-size);
     margin-top: 0.5em;
     font-weight: bold;
 }
 
 .light-text{
-    color: #d1d0d0;
-    font-size: 1.2rem;
+    color: var(--light-gray);
+    font-size: var(--text-size);
     line-height: 1.4rem;
 }
 
 .dark-text{
-    color: #4d4d4d;
-    font-size: 1.2rem;
+    color: var(--dark-gray);
+    font-size: var(--text-size);
     line-height: 1.4rem;
 }

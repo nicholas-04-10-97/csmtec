@@ -1,9 +1,43 @@
 ---
+import '../style/GlobalStyle.css';
+import '../style/contactStyle.css';
+
 import Layout from '../layouts/Layout.astro';
+import FormImage from '../assets/contato/faleconosco.webp';
+
+import ContactForm from "../components/function/ContactForm.astro";
+
 ---
 
 <Layout title="Fale Conosco - CSM TEC">
+<div class="contact-banner">
+    <div class="contact-banner-content">
+        <p class="white-hero">Fale Conosco</p>
+    </div>
+</div>
 
+<section class="form-section">
+	<div class="form-container">
+		<div class="form-content">
+			<p class="blue-sub-title">Fale Conosco</p>
+			<p class="black-title">Entre em contato</p>
+			<p class="dark-text">Ficamos à disposição para compartilhar mais detalhes sobre nossos serviços com você.</p>
+		
+        <section>
+            <ContactForm />
+         </section>
+
+
+
+
+
+
+        </div>		
+        <div class="form-content">
+			<img src={FormImage.src} alt="contato" />
+		</div>
+	</div>
+</section>
 
 
 </Layout>

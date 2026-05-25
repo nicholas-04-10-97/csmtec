@@ -4,8 +4,14 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background-color: #266fcf;
-}
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-black) 0%,
+      var(--primary-blue) 30%,
+      var(--primary-blue) 75%,
+      var(--primary-black) 100%
+    );}
 
 .hero-container{
     padding: 5rem 4rem 5rem 0rem;
@@ -67,7 +73,7 @@ padding-bottom: 5rem;
     max-width: 23rem;
     min-height: 14rem;
 
-    border: #093b7c solid 2.5px;
+    border: var(--primary-blue) solid 2.5px;
     border-radius: 12px;
     padding: 2rem 1rem;
     gap: 1rem;
@@ -121,7 +127,7 @@ padding-bottom: 5rem;
     max-width: 23rem;
     min-height: 18.5rem;
 
-    border: #000000 solid 2.5px;
+    border: var(--primary-black) solid 2.5px;
     border-radius: 12px;
     padding: 1.5rem 1rem 1rem;
     gap: 1rem;
