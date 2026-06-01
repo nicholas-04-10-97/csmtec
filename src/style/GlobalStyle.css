@@ -1,14 +1,14 @@
  html, body {
   margin: 0;
   padding: 0;
-    zoom: 0.98;
+    zoom: 0.96;
 }
 
 :root {
   --primary-black: #000000;
   --primary-white: #ffffff;
   --primary-blue: #1656a5;
-  --light-gray: #d1d0d0;
+  --light-gray: #e0e0e0;
   --dark-gray: #4d4d4d;
 
   --title-size: 3rem;
@@ -16,6 +16,7 @@
   --subtitle-size: 1.2rem;
   --calling-text:1.4rem;
   --text-size: 1rem;
+  --fullbody-text-size: 1.2rem;
 }
 
  html p {
@@ -86,4 +87,10 @@ font-family: Arial, sans-serif;
     color: var(--dark-gray);
     font-size: var(--text-size);
     line-height: 1.4rem;
+}
+
+.dark-fullbody-text{
+    color: var(--dark-gray);
+    font-size: var(--fullbody-text-size);
+    line-height: 1.6rem;
 }
