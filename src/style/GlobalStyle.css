@@ -10,21 +10,34 @@
   --primary-blue: #1656a5;
   --light-gray: #e0e0e0;
   --dark-gray: #4d4d4d;
+  --link-blue: #1a73e8;
 
   --title-size: 3rem;
   --title-height: 3.5rem;
   --subtitle-size: 1.2rem;
   --calling-text:1.4rem;
   --text-size: 1rem;
-  --fullbody-text-size: 1.2rem;
+  --fullbody-text-size: 1.19rem;
 }
 
- html p {
+ html p{
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
 font-family: Arial, sans-serif;
-  
+}
+
+html a{
+    text-decoration: none;
+    color: var(--link-blue);
+}
+
+html a:hover {
+    color: var(--primary-blue);
+}
+
+li {
+font-family: Arial, sans-serif;
 }
 
   .white-hero {
@@ -93,4 +106,14 @@ font-family: Arial, sans-serif;
     color: var(--dark-gray);
     font-size: var(--fullbody-text-size);
     line-height: 1.6rem;
+}
+
+.light-fullbody-text{
+    color: var(--light-gray);
+    font-size: var(--fullbody-text-size);
+    line-height: 1.6rem;
+}
+
+.bold-text{
+    font-weight: bold;
 }
