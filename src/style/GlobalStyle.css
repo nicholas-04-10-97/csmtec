@@ -20,7 +20,7 @@
   --fullbody-text-size: 1.19rem;
 }
 
- html p{
+ html p, th, td{
   margin: 0;
   padding: 0;
   padding-bottom: 1rem;
