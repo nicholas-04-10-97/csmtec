@@ -278,6 +278,9 @@ margin: 0;
     max-width: 100%;
      }
 
+       .diferencial-motivos {
+    gap: 3.2rem;}
+
 }
 
   
@@ -291,6 +294,9 @@ margin: 0;
     width: 95%;
     padding: 4rem 0 2rem;
   }
+
+       .diferencial-motivos {
+    gap: 1.5rem;}
 }
 
   
