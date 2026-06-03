@@ -165,7 +165,7 @@ padding-bottom: 5rem;
     padding: 2rem 0;
 }
 
-.diferencial-row-left{
+.diferencial-row-left, .diferencial-row-left-2{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -173,7 +173,7 @@ padding-bottom: 5rem;
     max-width: 37rem;
 }
 
-.diferencial-row-right{
+.diferencial-row-right, .diferencial-row-right-2{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -220,3 +220,77 @@ padding: 0;
 margin: 0;
 }
 
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1140px) {
+
+  .hero-container {
+    width: 90%;
+  }
+
+  .sobre-upper-left, .diferencial-row-left, .diferencial-row-right-2{
+    display: none;
+  }
+
+  .sobre-upper-right, .diferencial-row-right, .diferencial-row-left-2, .servicos-upper{
+    max-width: 100%;
+    padding: 0 4rem;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
+  }
+
+.sobre-lower, .servicos-lower {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 4rem;
+  }
+
+     .sobre-box, .servicos-box{
+    max-width: 26rem;
+     }
+
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .hero-container {
+    width: 90%;
+    padding: 5rem 0 3rem;
+    text-align: center;
+    align-items: center;
+  }
+
+    .sobre-upper-right, .diferencial-row-right, .diferencial-row-left-2, .servicos-upper{
+    padding: 0 2rem;
+
+  }
+    .servicos-lower, .sobre-lower{
+    padding: 0 2rem;
+  }
+     .sobre-box, .servicos-box{
+    max-width: 100%;
+     }
+
+}
+
+  
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  .hero-container {
+    width: 95%;
+    padding: 4rem 0 2rem;
+  }
+}
+
+  

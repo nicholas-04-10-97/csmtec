@@ -117,3 +117,81 @@ font-family: Arial, sans-serif;
 .bold-text{
     font-weight: bold;
 }
+
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1140px) {
+
+  :root {
+    --title-size: 2.5rem;
+    --title-height: 3rem;
+    --calling-text: 1.3rem;
+    --subtitle-size: 1.1rem;
+    --fullbody-text-size: 1.1rem;
+  }
+
+  .white-hero {
+    font-size: 4rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  :root {
+    --title-size: 2rem;
+    --title-height: 2.5rem;
+    --calling-text: 1.15rem;
+    --subtitle-size: 1rem;
+    --text-size: 0.95rem;
+    --fullbody-text-size: 1rem;
+  }
+
+  .white-hero {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .black-title,
+  .white-title {
+    word-wrap: break-word;
+  }
+
+  .dark-fullbody-text,
+  .light-fullbody-text {
+    line-height: 1.8rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+  :root {
+    --title-size: 1.75rem;
+    --title-height: 2.2rem;
+    --calling-text: 1.05rem;
+    --subtitle-size: 0.95rem;
+    --text-size: 0.9rem;
+    --fullbody-text-size: 0.95rem;
+  }
+
+  .white-hero {
+    font-size: 2.3rem;
+  }
+
+  html p,
+  th,
+  td,
+  li {
+    line-height: 1.6;
+  }
+}
