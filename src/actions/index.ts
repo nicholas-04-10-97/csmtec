@@ -1,0 +1,19 @@
+import { defineAction } from 'astro:actions';
+import { z } from 'astro:schema';
+
+export const server = {
+  contact: defineAction({
+    input: z.object({
+      name: z.string(),
+      email: z.string().email(),
+      message: z.string(),
+    }),
+    handler: async (data) => {
+      console.log(data);
+
+      return {
+        success: true,
+      };
+    },
+  }),
+};
