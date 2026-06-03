@@ -1,5 +1,10 @@
 ---
 import logo from "../../assets/LogoWhite.png"
+
+import Building from "/public/icons/building.png";
+import Location from "/public/icons/location.png";
+import Mail from "/public/icons/mail.png";
+import Phone from "/public/icons/phonewhite.png";
 ---
 
 <footer class="footer">
@@ -25,12 +30,12 @@ import logo from "../../assets/LogoWhite.png"
       <h3>Endereço</h3>
 
       <div class="footer-item">
-		<img src="public/icons/building.png" alt="Inovação" />
+		<img src={Building.src} alt="Inovação" />
         <span>Edifício Empresarial Alto do Parque</span>
       </div>
 
       <div class="footer-item">
-        <img src="public/icons/location.png" alt="Inovação" />
+        <img src={Location.src} alt="Inovação" />
         <span>
           Rua Professor Leopoldo Amaral 366, Pavimento 1001,
           Sala 09 e 10, CEP: 41.830-494, Pituba, Salvador-BA
@@ -38,12 +43,12 @@ import logo from "../../assets/LogoWhite.png"
       </div>
 
       <div class="footer-item">
-        <img src="public/icons/mail.png" alt="Inovação" />
+        <img src={Mail.src} alt="Inovação" />
         <span><a href="mailto:contato@csmtec.com.br">contato@csmtec.com.br</a></span>
       </div>
 
       <div class="footer-item">
-        <img src="public/icons/phonewhite.png" alt="Inovação" />
+        <img src={Phone.src} alt="Inovação" />
         <a href="tel:+557126261201">+55 (71) 2626-1201</a>
       </div>
     </div>

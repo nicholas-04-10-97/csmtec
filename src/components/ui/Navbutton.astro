@@ -1,21 +1,32 @@
 ---
 // Example links
 const phoneNumber = "5571999999999";
+import Phone from "/public/icons/phone.png";
+import PhoneHover from "/public/icons/phonewhite.png";
+import ArrowUp from "/public/icons/arrowUP.png";
+import ArrowupHover from "/public/icons/arrowUPwhite.png";
+
 ---
 <div class="floating-buttons">
   <!-- Phone Button -->
-  <a
-    href={`https://wa.me/${phoneNumber}`}
-    class="float-btn phone-btn"
-    target="_blank"
-  >
-    <img src="public/icons/phone.png" alt="CALL">
+  <a    href={`https://wa.me/${phoneNumber}`} class="float-btn phone-btn" target="_blank">
+
+<div class="icon-wrapper">
+  <img class="icon-default" src={Phone.src} alt="CALL" />
+  <img class="icon-hover" src={PhoneHover.src} alt="CALL" />
+</div>
+
   </a>
 
   <!-- Back To Top Button -->
   <button id="topButton" class="float-btn top-btn">
-        <img src="public/icons/arrowUP.png" alt="UP">
-  </button>
+
+<div class="icon-wrapper">
+  <img class="icon-default" src={ArrowUp.src} alt="UP" />
+  <img class="icon-hover" src={ArrowupHover.src} alt="UP" />
+</div>  
+
+</button>
 </div>
 
 <script>
@@ -61,7 +72,7 @@ const phoneNumber = "5571999999999";
     width: 60px;
     height: 60px;
     border: none;
-    border-radius: 14px;
+    border-radius: 6px;
     font-size: 28px;
     cursor: pointer;
 
@@ -89,6 +100,7 @@ border: 2px solid #6085ff;
   .top-btn {
 border: 2px solid #6085ff; 
     color: white;
+    background: transparent;
 
     opacity: 0;
     transform: translateY(100px);
@@ -104,4 +116,30 @@ border: 2px solid #6085ff;
   .top-btn:hover {
     background: #6085ff;
   }
+
+
+  .icon-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.icon-hover {
+  opacity: 0;
+}
+
+.float-btn:hover .icon-hover {
+  opacity: 1;
+}
+
+
+
 </style>

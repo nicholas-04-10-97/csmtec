@@ -1,10 +1,11 @@
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: fit-content;
-  background-image: url('./src/assets/home/heroBG.jpg');
+  background-image: url('../assets/heroBG.jpg');
     background-size: cover;
     background-position: center;
 }

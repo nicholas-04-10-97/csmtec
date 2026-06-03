@@ -5,7 +5,16 @@ import '../style/indexStyle.css';
 
 import TextAnimation from '../components/ui/TextAnimation.astro';
 import VerticalLine from '../components/ui/VerticalLine.astro';
+
 import SobreNosImage from '../assets/home/about-us.webp';
+import sobretarget from '/public/icons/target.png';
+import sobreeye from '/public/icons/eye.png';
+import sobrescales from '/public/icons/scales.png';
+
+import servicoai from '/public/icons/ai.png';
+import servicoeducation from '/public/icons/education.png';
+import servicosystem from '/public/icons/system.png';
+
 import services01 from '../assets/home/services-01.webp';
 import services02 from '../assets/home/services-02.webp';
 import servicescheck from '/public/icons/check.png';
@@ -36,18 +45,18 @@ import servicescheck from '/public/icons/check.png';
 		</div>
 		<div class="sobre-lower">
 			<div class="sobre-box">
-				<img src="public/icons/target.png" alt="missao">
+				<img src={sobretarget.src} alt="missao">
 				<p class="black-mid-title">Missão</p>
 				<p class="dark-text">Resolver desafios complexos com tecnologia disruptiva.</p>
 			</div>
 			<div class="sobre-box">
-				<img src="public/icons/eye.png" alt="visao">
+				<img src={sobreeye.src} alt="visao">
 				<p class="black-mid-title">Visão</p>
 				<p class="dark-text">Ser referência em soluções que transformam setores essenciais para a sociedade.</p>
 
 			</div>
 			<div class="sobre-box">
-				<img src="public/icons/scales.png" alt="valor">
+				<img src={sobrescales.src} alt="valor">
 				<p class="black-mid-title">Valores</p>
 				<p class="dark-text">Inovação / Acessibilidade / Ética / Qualidade / Segurança e Conformidade / Humanização.</p>
 			</div>
@@ -64,18 +73,18 @@ import servicescheck from '/public/icons/check.png';
 		</div>
 		<div class="servicos-lower">
 			<div class="servicos-box">
-				<img src="public/icons/ai.png" alt="desenvolvimento">
+				<img src={servicoai.src} alt="desenvolvimento">
 				<p class="black-sub-title">Desenvolvimento de Aplicações usando IA</p>
 				<p class="dark-text">A tecnologia deve simplificar rotinas, ampliar oportunidades e estar ao alcance de todos. Criamos aplicações inteligentes que entendem necessidades, antecipam desafios e entregam experiências intuitivas, aproximando pessoas da inovação de forma natural e significativa. </p>
 			</div>
 			<div class="servicos-box">
-				<img src="public/icons/education.png" alt="educacao">
+				<img src={servicoeducation.src} alt="educacao">
 				<p class="black-sub-title">Educação como Experiência Transformadora</p>
 				<p class="dark-text">O conhecimento deve ser acessível, dinâmico e adaptável. Criamos soluções que personalizam a jornada de aprendizado, conectam educadores e alunos e transformam a tecnologia em um meio intuitivo para o crescimento pessoal e profissional. </p>
 
 			</div>
 			<div class="servicos-box">
-				<img src="public/icons/system.png" alt="integracao">
+				<img src={servicosystem.src} alt="integracao">
 				<p class="black-sub-title">Integração de Sistemas e Conectividade Inteligente</p>
 				<p class="dark-text">Para se tornar verdadeiramente poderosa, a tecnologia deve servir como ponte entre necessidades e soluções, facilitando conexões. Desenvolvemos sistemas conectados que ampliam o alcance da inovação e proporcionam experiências mais fluidas, seguras e eficazes. </p>
 			</div>
@@ -148,16 +157,6 @@ import servicescheck from '/public/icons/check.png';
 					</div>
 				</div>
 			</div>	
-
-
-
-
-
-
-
-
-
-
 
 			<div class="diferencial-row-right">
 				<img src={services02.src} alt="Sobre Nós" />

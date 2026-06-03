@@ -1,5 +1,7 @@
 ---
 import logo from "../../assets/LogoWhite.png"
+
+import Arrowdown from "/public/icons/arrowDOWNwhite.png";
 ---
 
 <header id="site-header">
@@ -27,7 +29,7 @@ import logo from "../../assets/LogoWhite.png"
         <!-- Dropdown -->
         <li class="dropdown">
           <button class="dropdown-btn">
-            CONTATO<img src="public/icons/arrowDOWNwhite.png" alt="Seta para baixo" style="width: 12px; margin-left: 4px;" />
+            CONTATO<img src={Arrowdown.src} alt="Seta para baixo" style="width: 12px; margin-left: 4px;" />
           </button>
 
           <ul class="submenu">
@@ -163,7 +165,7 @@ import logo from "../../assets/LogoWhite.png"
     top: 140%;
     left: 0;
 
-    min-width: 230px;
+    min-width: 190px;
 
     background: #ffffff;
 
@@ -185,14 +187,16 @@ import logo from "../../assets/LogoWhite.png"
 
   .submenu a {
     display: block;
-    padding: 1rem 0.5rem;
-    border-bottom: #b2b2b2 1px solid;
+    padding: 1rem 0 1rem 1rem;
+    border: #ffffff 1px solid;
     color: rgb(0, 0, 0);
+    font-size: 0.95rem;
   }
 
 .submenu a:hover {
   background-color: #053167;
   color: #ffffff;
+  border: #b2b2b2 1px solid;
   text-decoration: none;
 }
 
