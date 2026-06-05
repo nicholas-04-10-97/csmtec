@@ -98,7 +98,7 @@ max-width: 37rem;
 
   .contact-banner-content {
     width: 90%;
-    padding: 6rem 0 3rem;
+    padding: 8rem 0 3rem;
   }
 
   .form-container {
@@ -111,6 +111,12 @@ max-width: 37rem;
 
   .conformImg {
     width: 70%;
+  }
+
+    .form-content img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
   }
 }
 
@@ -126,7 +132,7 @@ max-width: 37rem;
 
   .contact-banner-content {
     width: 90%;
-    padding: 5rem 0 2rem;
+    padding: 8rem 0 2.5rem;
     text-align: center;
   }
 
@@ -154,12 +160,10 @@ max-width: 37rem;
   }
 
   .conformidade-section {
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
   }
 
-  .conformidade-content {
-    width: 100%;
-  }
+
 
   .conformImg {
     width: 100%;
@@ -174,7 +178,7 @@ max-width: 37rem;
 @media (max-width: 480px) {
 
   .contact-banner-content {
-    padding: 4rem 0 2rem;
+    padding: 8rem 0 2rem;
   }
 
   .form-section {
@@ -182,7 +186,7 @@ max-width: 37rem;
   }
 
   .conformidade-section {
-    padding: 3rem 1rem;
+    padding: 3rem 0rem;
   }
 
   .form-content img {

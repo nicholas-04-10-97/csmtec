@@ -28,9 +28,9 @@ import Arrowdown from "/public/icons/arrowDOWNwhite.png";
 
         <!-- Dropdown -->
         <li class="dropdown">
-          <button class="dropdown-btn">
+          <a class="dropdown-btn">
             CONTATO<img src={Arrowdown.src} alt="Seta para baixo" style="width: 12px; margin-left: 4px;" />
-          </button>
+          </a>
 
           <ul class="submenu">
             <li><a href="/fale-conosco">Fale Conosco</a></li>
@@ -312,6 +312,7 @@ import Arrowdown from "/public/icons/arrowDOWNwhite.png";
     .submenu a {
       padding-left: 1rem;
       color: #c9d8ea;
+      border: none;
     }
 
     /* Disable hover dropdown on mobile */
