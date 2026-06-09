@@ -7,3 +7,7 @@ export default defineConfig({
   output: 'server',
   adapter: netlify(),
 });
+
+
+
+//mudar renderizacao para apenas paginas do formulario

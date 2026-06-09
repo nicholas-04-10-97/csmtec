@@ -22,9 +22,9 @@ import Arrowdown from "/public/icons/arrowDOWNwhite.png";
     <!-- Navigation -->
     <nav id="mobile-menu">
       <ul class="nav-links">
-        <li><a href="http://localhost:4321/#about">SOBRE A CSM</a></li>
-        <li><a href="http://localhost:4321/#services">SERVIÇOS</a></li>
-        <li><a href="http://localhost:4321/#resources">RECURSOS</a></li>
+        <li><a href="/#about">SOBRE A CSM</a></li>
+        <li><a href="/#services">SERVIÇOS</a></li>
+        <li><a href="/#resources">RECURSOS</a></li>
 
         <!-- Dropdown -->
         <li class="dropdown">
@@ -237,7 +237,13 @@ import Arrowdown from "/public/icons/arrowDOWNwhite.png";
 
 
   /* MOBILE */
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
+
+      .logo img {
+    height: 36px;
+    padding: 6px 0;
+
+  }
 
     .menu-toggle {
       display: flex;

@@ -2,7 +2,8 @@
 import { actions } from 'astro:actions';
 ---
 
-<form class="contact-form" action={actions.contact}>
+<form class="contact-form" action="api/form">
+<!--<form class="contact-form" action={actions.contact}>-->
   <div class="form-row">
     <input type="text" name="name" placeholder="Nome" required/>
     <input type="email" name="email" placeholder="E-mail" required/>

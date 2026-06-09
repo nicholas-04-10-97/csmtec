@@ -114,9 +114,7 @@ max-width: 37rem;
   }
 
     .form-content img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    display: none;
   }
 }
 
@@ -153,11 +151,6 @@ max-width: 37rem;
     align-items: center;
   }
 
-  .form-content img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-  }
 
   .conformidade-section {
     padding: 4rem 0rem;

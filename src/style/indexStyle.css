@@ -249,9 +249,9 @@ margin: 0;
   }
 
      .sobre-box, .servicos-box{
-    max-width: 26rem;
+    max-width: 18rem;
+    padding-bottom: 0;
      }
-
 
 }
 
@@ -277,6 +277,7 @@ margin: 0;
   }
      .sobre-box, .servicos-box{
     max-width: 100%;
+        min-height: 14rem;
      }
 
        .diferencial-motivos {
