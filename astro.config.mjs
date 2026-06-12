@@ -4,10 +4,9 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'hybrid',
   adapter: netlify(),
 });
 
 
 
-//mudar renderizacao para apenas paginas do formulario

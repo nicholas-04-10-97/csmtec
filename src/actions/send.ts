@@ -26,11 +26,7 @@ export const server = {
         `,
         
       });
-        console.log('Form submitted:', data);
 
-  const result = await resend.emails.send(...);
-
-  console.log(result);
 
       return {
         success: true,

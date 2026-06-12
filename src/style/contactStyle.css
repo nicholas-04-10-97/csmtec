@@ -91,38 +91,11 @@ max-width: 37rem;
 
 
 
-/* =========================
-   TABLET
-========================= */
-@media (max-width: 1140px) {
-
-  .contact-banner-content {
-    width: 90%;
-    padding: 8rem 0 3rem;
-  }
-
-  .form-container {
-    width: 90%;
-  }
-
-  .conformidade-content {
-    width: 90%;
-  }
-
-  .conformImg {
-    width: 70%;
-  }
-
-    .form-content img {
-    display: none;
-  }
-}
-
 
 /* =========================
    MOBILE
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
 
   .contact-banner {
     padding-left: 0;
@@ -151,16 +124,26 @@ max-width: 37rem;
     align-items: center;
   }
 
-
   .conformidade-section {
     padding: 4rem 0rem;
   }
 
-
-
   .conformImg {
     width: 100%;
     max-width: 500px;
+  }
+
+  .conformidade-content {
+    width: 90%;
+  }
+
+
+
+
+
+
+      .form-content img {
+    display: none;
   }
 }
 
