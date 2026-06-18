@@ -1,4 +1,6 @@
 ---
+export const prerender = false // Desativa a pré-renderização para esta página
+
 import '../style/contactStyle.css';
 
 import Layout from '../layouts/Layout.astro';
@@ -44,7 +46,7 @@ Registre aqui sua denúncia:</p>
             <p class="dark-fullbody-text">Registre sua denúncia:</p>
         </section>
         <section class="conformidade-form">
-            <ContactForm />
+            <ContactForm subject="Conformidade"/>
         </section>
         <p class="dark-fullbody-text">Além deste canal, outra opção para envio de denúncias é o e-mail: <a href="mailto:conformidade@csmtec.com.br">conformidade@csmtec.com.br</a>. Garantimos total sigilo e segurança no tratamento das informações. As informações são registradas e tratadas com sigilo absoluto, regidos de forma confidencial e independente, garantindo o anonimato dos relatores e a segurança na apuração. </p>
     </div>

@@ -1,4 +1,6 @@
 ---
+export const prerender = false // Desativa a pré-renderização para esta página
+
 import '../style/contactStyle.css';
 
 import Layout from '../layouts/Layout.astro';
@@ -22,7 +24,7 @@ import ContactForm from "../components/function/formAction.astro";
 			<p class="black-title">Entre em contato</p>
 			<p class="dark-text">Faça parte da nossa equipe e contribua para transformar ideias em soluções inovadoras!</p>
         <section class="conformidade-form">
-            <ContactForm />
+            <ContactForm subject="Seja um Colaborador"/>
         </section>
 
 

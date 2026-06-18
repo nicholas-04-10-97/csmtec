@@ -1,19 +1,29 @@
 ---
-export const prerender = false // Desativa a pré-renderização para esta página
-import { actions } from 'astro:actions';
+const WEB3FORMS_ACCESS_KEY = "b77095f8-b6fb-48ec-8e73-5b1edc823997";
+const { subject } = Astro.props;
+
 ---
 
-<form class="contact-form" action={actions.contact}>
+<form class="contact-form"  action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+
   <div class="form-row">
-    <input type="text" name="name" placeholder="Nome" required/>
-    <input type="email" name="email" placeholder="E-mail" required/>
+    <input type="text" name="name" placeholder="Nome" required />
+    <input type="email" name="email" placeholder="E-mail" required />
   </div>
 
   <textarea name="message" placeholder="Mensagem" required></textarea>
 
   <button type="submit">Enviar</button>
-</form>
 
+<input  type="hidden"  name="redirect"  value={`${Astro.url.origin}/mensagem-enviada-com-sucesso`}/>
+
+<input  type="checkbox"  name="botcheck"  class="hidden"  style="display: none;"/>
+
+<input  type="hidden"  name="subject"  value={subject} />
+
+
+</form>
 
 <style>
   .contact-form {

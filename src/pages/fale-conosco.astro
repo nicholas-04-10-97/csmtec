@@ -1,4 +1,5 @@
 ---
+export const prerender = false // Desativa a pré-renderização para esta página
 
 import Layout from '../layouts/Layout.astro';
 import FormImage from '../assets/contato/faleconosco.webp';
@@ -23,7 +24,7 @@ import ContactForm from "../components/function/formAction.astro";
 			<p class="dark-text">Ficamos à disposição para compartilhar mais detalhes sobre nossos serviços com você.</p>
 		
         <section class="conformidade-form">
-            <ContactForm />
+            <ContactForm subject="Fale Conosco"/>
          </section>
 
         </div>		
