@@ -1,6 +1,7 @@
 ---
 import Header from '../components/sections/header.astro';
 import Footer from '../components/sections/footer.astro';
+import CookieBanner from "../components/function/CookieBanner.astro";
 
 import Navbutton from '../components/ui/Navbutton.astro';
 
@@ -26,6 +27,7 @@ const { title } = Astro.props;
       <slot />
     </main>
 
+	  <CookieBanner />
     <Footer />
 
     <Navbutton />

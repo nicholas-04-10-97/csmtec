@@ -6,7 +6,9 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Mensagem Enviada com Sucesso">
     <div class="hero">
-        <p class="white-hero">Mensagem Enviada com Sucesso</p>
+        <p class="white-hero">Mensagem Enviada com Sucesso</p> 
+        <a href="/" class="voltar-ao-inicio">Voltar ao início</a>
+    </div>
 </Layout>
 
 
@@ -17,9 +19,22 @@ import Layout from '../layouts/Layout.astro';
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         height: 100vh;
+        padding: 4rem;
         text-align: center;
+        background:linear-gradient(to bottom, var(--primary-black) 0%,      var(--primary-blue) 25%,      var(--primary-white) 100%);
+    }
+    
+    .voltar-ao-inicio {
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
         background-color: var(--primary-blue);
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
     }
 
 </style>
