@@ -1,0 +1,82 @@
+---
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('noticias');
+
+  return posts.map((post) => ({
+    params: {
+      slug: post.id.replace(/\.md$/, ''),
+    },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{post.data.title}</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <a href="/noticias">← Voltar</a>
+
+      <h1>{post.data.title}</h1>
+
+      <p class="date">
+        {post.data.pubDate.toLocaleDateString('pt-BR')}
+      </p>
+
+      {post.data.heroImage && (
+        <img
+          src={post.data.heroImage}
+          alt={post.data.title}
+          class="hero-image"
+        />
+      )}
+
+      <article class="content">
+        <Content />
+      </article>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: sans-serif;
+    background: #f8fafc;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .date {
+    color: #64748b;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    line-height: 1.8;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

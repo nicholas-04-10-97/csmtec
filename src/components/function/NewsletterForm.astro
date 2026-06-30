@@ -1,0 +1,66 @@
+<section class="newsletter">
+  <div class="newsletter-content">
+    <h2>Receba nossas novidades</h2>
+
+    <p>
+      Cadastre seu email para receber notificações sempre que
+      publicarmos novas notícias e atualizações.
+    </p>
+
+    <form
+      action="https://app.convertkit.com/forms/9629015/subscriptions"
+      method="post"
+      target="_blank"
+      class="newsletter-form"
+    >
+      <input
+        type="email"
+        name="email_address"
+        placeholder="Seu melhor email"
+        required
+      />
+
+      <button type="submit">
+        Inscrever-se
+      </button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .newsletter {
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: #111827;
+    color: white;
+  }
+
+  .newsletter-content {
+    max-width: 600px;
+  }
+
+  .newsletter-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  input {
+    flex: 1;
+    min-width: 240px;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    border: none;
+  }
+
+  button {
+    padding: 0.9rem 1.4rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+</style>
+

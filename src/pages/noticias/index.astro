@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+
+import { getCollection } from 'astro:content';
+import NewsletterForm from '../../components/function/NewsletterForm.astro';
+
+const posts = await getCollection('noticias');
+
+posts.sort(
+  (a, b) =>
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+
+---
+
+<Layout title="Notícias" description="Acompanhe nossas novidades, serviços e atualizações." >
+
+<div class="contact-banner">
+    <div class="contact-banner-content">
+        <p class="white-hero">Notícias</p>
+    </div>
+</div>
+
+  <main class="container">
+      <section class="hero">
+        <p>
+          Acompanhe nossas novidades, serviços e atualizações.
+        </p>
+      </section>
+
+      <section class="posts">
+        {
+          posts.map((post) => (
+            <article class="card">
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.title}
+                />
+              )}
+
+              <div class="content">
+                <p class="date">
+                  {post.data.pubDate.toLocaleDateString('pt-BR')}
+                </p>
+
+                <h2>
+                  <a href={`/noticias/${post.id}/`}>
+                    {post.data.title}
+                  </a>
+                </h2>
+
+                <p>{post.data.description}</p>
+              </div>
+            </article>
+          ))
+        }
+      </section>
+
+      <NewsletterForm />
+    </main>
+</Layout>
+
+
+
+<style>
+  .contact-banner{
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-blue) 0%,
+      var(--primary-black) 30%,
+      var(--primary-blue) 75%,
+      #75aef3 100%
+    );
+
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 2rem;
+}
+
+.contact-banner-content{
+    padding: 8rem 0 4rem;
+    display: flex;
+    flex-direction: row;
+    width: 75rem;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #f8fafc;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .posts {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .date {
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
