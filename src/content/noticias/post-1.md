@@ -2,7 +2,7 @@
 title: "Novo serviço disponível"
 description: "Lançamos uma nova solução para clientes."
 pubDate: 2026-06-19
-heroImage: "/images/news-1.jpg"
+heroImage: "/assets/noticias/news-1.jpg"
 ---
 
 # Bem-vindo

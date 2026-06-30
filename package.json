@@ -13,8 +13,14 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^7.0.12",
-    "@astrojs/rss": "^4.0.18",
+    "@astrojs/rss": "^4.0.19",
     "astro": "^6.3.6",
     "resend": "^6.12.4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.0": true,
+    "esbuild@0.27.7": true,
+    "@parcel/watcher@2.5.6": true,
+    "sharp@0.34.5": true
   }
 }
